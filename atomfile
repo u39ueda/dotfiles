@@ -1,0 +1,17 @@
+atom-beautify@0.32.2
+atom-watcher@1.1.7
+busy-signal@1.4.3
+file-icons@2.1.18
+intentions@1.1.5
+language-lua@0.9.11
+language-matlab@0.2.1
+language-todotxt@1.0.2
+linter@2.2.0
+linter-eslint@8.4.1
+linter-lua@1.0.4
+linter-ui-default@1.7.1
+minimap@4.29.8
+project-manager@3.3.5
+sort-lines@0.18.0
+symbols-tree-view@0.14.0
+

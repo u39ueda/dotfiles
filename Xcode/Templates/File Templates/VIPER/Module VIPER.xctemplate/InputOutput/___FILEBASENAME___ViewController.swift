@@ -1,0 +1,1 @@
+../InputOutputXIB/___FILEBASENAME___ViewController.swift
