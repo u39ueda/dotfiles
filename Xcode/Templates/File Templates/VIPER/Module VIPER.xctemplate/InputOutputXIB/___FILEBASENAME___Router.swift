@@ -14,10 +14,10 @@ final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName
 
     // MARK: Properties
 
-    private weak var viewController: UIViewController?
+    private weak var viewController: ___VARIABLE_productName:identifier___ViewController?
 
     /// Factory method
-    static func createModule() -> UIViewController {
+    static func createModule() -> ___VARIABLE_productName:identifier___ViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = ___VARIABLE_productName:identifier___ViewController(nibName: nil, bundle: nil)
         let interactor = ___VARIABLE_productName:identifier___Interactor()
@@ -32,6 +32,12 @@ final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName
     }
 
     // MARK: - Life cycle
+
+    private init() {
+    }
+
+    deinit {
+    }
 
     // MARK: - WireframeProtocol
 }

@@ -21,5 +21,8 @@ public final class ___VARIABLE_productName:identifier___Interactor: ___VARIABLE_
     public init() {
     }
 
+    deinit {
+    }
+
     // MARK: - InteractorInputProtocol
 }

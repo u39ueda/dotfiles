@@ -26,7 +26,25 @@ final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productN
         self.router = router
     }
 
+    deinit {
+    }
+
     // MARK: - PresenterProtocol
+
+    func viewDidLoad() {
+    }
+
+    func viewWillAppear(_ animated: Bool) {
+    }
+
+    func viewDidAppear(_ animated: Bool) {
+    }
+
+    func viewWillDisappear(_ animated: Bool) {
+    }
+
+    func viewDidDisappear(_ animated: Bool) {
+    }
 
     // MARK: - InteractorOutputProtocol
 }
