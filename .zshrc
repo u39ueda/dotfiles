@@ -91,10 +91,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 export PATH=$PATH:~/bin
 
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
 # setup anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
