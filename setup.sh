@@ -81,4 +81,5 @@ launchctl load -w ~/Library/LaunchAgents/localhost.auto-upgrade.plist
 
 # setup Xcode templates
 ln -sf ${DOTFILES_DIR}/Xcode/Templates ~/Library/Developer/Xcode/Templates
+ln -sf ${DOTFILES_DIR}/Xcode/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets
 

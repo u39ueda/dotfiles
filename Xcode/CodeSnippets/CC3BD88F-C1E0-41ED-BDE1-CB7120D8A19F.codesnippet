@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    // MARK: - IBOutlet
+
+    // MARK: Properties
+
+    // MARK: - Life cycle
+
+    // MARK: Rotate
+
+    // MARK: Override
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CC3BD88F-C1E0-41ED-BDE1-CB7120D8A19F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIView/UIViewControllerのclassブロック内のMARK</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View class implement MARK</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
