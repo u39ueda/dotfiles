@@ -83,3 +83,8 @@ launchctl load -w ~/Library/LaunchAgents/localhost.auto-upgrade.plist
 ln -sf ${DOTFILES_DIR}/Xcode/Templates ~/Library/Developer/Xcode/Templates
 ln -sf ${DOTFILES_DIR}/Xcode/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets
 
+# disable generate .DS_Store in network drive
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+# disable shadow at screen-capture
+defaults write com.apple.screencapture disable-shadow -boolean true
+
