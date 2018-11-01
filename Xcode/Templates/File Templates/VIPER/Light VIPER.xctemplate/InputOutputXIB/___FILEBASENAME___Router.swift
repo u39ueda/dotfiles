@@ -19,7 +19,7 @@ final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName
     /// Factory method
     static func createModule() -> ___VARIABLE_productName:identifier___ViewController {
         // Change to get view from storyboard if not using progammatic UI
-        let view = ___VARIABLE_productName:identifier___ViewController(nibName: nil, bundle: nil)
+        let view = ___VARIABLE_productName:identifier___ViewController()
         let router = ___VARIABLE_productName:identifier___Router()
         let presenter = ___VARIABLE_productName:identifier___Presenter(interface: view, router: router)
 
