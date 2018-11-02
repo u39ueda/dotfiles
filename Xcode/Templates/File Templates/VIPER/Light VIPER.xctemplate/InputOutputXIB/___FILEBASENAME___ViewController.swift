@@ -10,59 +10,69 @@
 
 import UIKit
 
-final class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___VARIABLE_productName:identifier___ViewProtocol {
+public final class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___VARIABLE_productName:identifier___ViewProtocol {
 
     // MARK: - IBOutlet
 
     // MARK: Properties
 
-	var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+	public var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
 
     // MARK: - Life cycle
 
-    convenience init() {
+    /// コンストラクタ
+    public convenience init() {
         self.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    /// コンストラクタ
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
+    /// コンストラクタ（xib/storyboardから生成された場合）
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
+    /// デストラクタ
     deinit {
     }
 
-	override func viewDidLoad() {
+    /// 画面がロードされた時に一度だけ呼ばれる処理.
+	override public func viewDidLoad() {
         super.viewDidLoad()
 
         presenter?.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
+    /// メモリ不足時に呼ばれる処理.
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    /// 画面が表示される直前に呼ばれる処理.
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         presenter?.viewWillAppear(animated)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    /// 画面が表示された直後に呼ばれる処理.
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         presenter?.viewDidAppear(animated)
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    /// 画面が非表示にされる直前に呼ばれる処理.
+    override public func viewWillDisappear(_ animated: Bool) {
         presenter?.viewWillDisappear(animated)
         super.viewWillDisappear(animated)
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
+    /// 画面が非表示にされた直後に呼ばれる処理.
+    override public func viewDidDisappear(_ animated: Bool) {
         presenter?.viewDidDisappear(animated)
         super.viewDidDisappear(animated)
     }

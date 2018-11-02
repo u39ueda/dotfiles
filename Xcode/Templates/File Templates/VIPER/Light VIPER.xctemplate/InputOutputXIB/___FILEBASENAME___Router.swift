@@ -10,14 +10,14 @@
 
 import UIKit
 
-final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName:identifier___WireframeProtocol {
+public final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName:identifier___WireframeProtocol {
 
     // MARK: Properties
 
     private weak var viewController: ___VARIABLE_productName:identifier___ViewController?
 
     /// Factory method
-    static func createModule() -> ___VARIABLE_productName:identifier___ViewController {
+    public static func createModule() -> ___VARIABLE_productName:identifier___ViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = ___VARIABLE_productName:identifier___ViewController()
         let router = ___VARIABLE_productName:identifier___Router()
@@ -31,9 +31,11 @@ final class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName
 
     // MARK: - Life cycle
 
+    /// コンストラクタ（非公開）
     private init() {
     }
 
+    /// デストラクタ
     deinit {
     }
 

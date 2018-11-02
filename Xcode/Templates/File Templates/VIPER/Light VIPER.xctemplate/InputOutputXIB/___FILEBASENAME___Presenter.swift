@@ -10,7 +10,7 @@
 
 import UIKit
 
-final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresenterProtocol {
+public final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresenterProtocol {
 
     // MARK: Properties
 
@@ -19,11 +19,13 @@ final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productN
 
     // MARK: - Life cycle
 
-    init(interface: ___VARIABLE_productName:identifier___ViewProtocol, router: ___VARIABLE_productName:identifier___WireframeProtocol) {
+    /// コンストラクタ
+    public init(interface: ___VARIABLE_productName:identifier___ViewProtocol, router: ___VARIABLE_productName:identifier___WireframeProtocol) {
         self.view = interface
         self.router = router
     }
 
+    /// デストラクタ
     deinit {
     }
 
@@ -31,19 +33,24 @@ final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productN
 
     // MARK: ViewController -> Presenter
 
-    func viewDidLoad() {
+    /// 画面がロードされた時に一度だけ呼ばれる処理.
+    public func viewDidLoad() {
     }
 
-    func viewWillAppear(_ animated: Bool) {
+    /// 画面が表示される直前に呼ばれる処理.
+    public func viewWillAppear(_ animated: Bool) {
     }
 
-    func viewDidAppear(_ animated: Bool) {
+    /// 画面が表示された直後に呼ばれる処理.
+    public func viewDidAppear(_ animated: Bool) {
     }
 
-    func viewWillDisappear(_ animated: Bool) {
+    /// 画面が非表示にされる直前に呼ばれる処理.
+    public func viewWillDisappear(_ animated: Bool) {
     }
 
-    func viewDidDisappear(_ animated: Bool) {
+    /// 画面が非表示にされた直後に呼ばれる処理.
+    public func viewDidDisappear(_ animated: Bool) {
     }
 
     // MARK: Presenter -> ViewController
