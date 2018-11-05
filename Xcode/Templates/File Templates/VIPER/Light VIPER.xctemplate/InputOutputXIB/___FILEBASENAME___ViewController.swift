@@ -20,8 +20,12 @@ final class ___VARIABLE_productName:identifier___ViewController: UIViewControlle
 
     // MARK: - Life cycle
 
-    init() {
-        super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+    convenience init() {
+        self.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+    }
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init?(coder aDecoder: NSCoder) {
