@@ -16,7 +16,7 @@ public final class ___VARIABLE_productName:identifier___ViewController: UIViewCo
 
     // MARK: Properties
 
-	public var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+    public var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
 
     // MARK: - Life cycle
 
@@ -40,7 +40,7 @@ public final class ___VARIABLE_productName:identifier___ViewController: UIViewCo
     }
 
     /// 画面がロードされた時に一度だけ呼ばれる処理.
-	override public func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         presenter?.viewDidLoad()

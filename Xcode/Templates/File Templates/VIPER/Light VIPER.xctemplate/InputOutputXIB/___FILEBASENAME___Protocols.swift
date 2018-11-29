@@ -25,16 +25,11 @@ public protocol ___VARIABLE_productName:identifier___WireframeProtocol: class {
 ///
 /// Presenterに適用する.
 public protocol ___VARIABLE_productName:identifier___PresenterProtocol: class {
-
-    // MARK: ViewController -> Presenter
-
     func viewDidLoad()
     func viewWillAppear(_ animated: Bool)
     func viewDidAppear(_ animated: Bool)
     func viewWillDisappear(_ animated: Bool)
     func viewDidDisappear(_ animated: Bool)
-
-    // MARK: Presenter -> ViewController
 }
 
 // MARK: - View

@@ -31,8 +31,6 @@ public final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_p
 
     // MARK: - PresenterProtocol
 
-    // MARK: ViewController -> Presenter
-
     /// 画面がロードされた時に一度だけ呼ばれる処理.
     public func viewDidLoad() {
     }
@@ -52,6 +50,4 @@ public final class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_p
     /// 画面が非表示にされた直後に呼ばれる処理.
     public func viewDidDisappear(_ animated: Bool) {
     }
-
-    // MARK: Presenter -> ViewController
 }
