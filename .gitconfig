@@ -4,7 +4,6 @@
 [github]
 	user = u39ueda
 [core]
-	excludesfile = /Users/yueda/.gitignore
 	autocrlf = input
 [alias]
 	st = status -sb
@@ -24,8 +23,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/yueda/.stCommitMsg
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true

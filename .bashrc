@@ -4,9 +4,23 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 export PATH=$PATH:~/bin
 
-source ~/.dotfiles/git-completion.bash
+# setup homebrew
+case "$(arch)" in
+"arm64")
+  if [ -e "/opt/homebrew/bin/brew" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+  ;;
+"i386")
+  if [ -e "/usr/local/bin/brew" ]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+  ;;
+*) echo Unknown arch. $(arch) >&2
+esac
 
 # setup anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+if command -v anyenv > /dev/null 2>&1; then
+  eval "$(anyenv init -)"
+fi
 

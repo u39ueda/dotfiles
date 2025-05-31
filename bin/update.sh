@@ -19,8 +19,8 @@ function execute() {
 }
 
 execute "anyenv update"
-HOMEBREW_NO_EMOJI=1 execute "brew upgrade --cleanup"
-execute "brew cask upgrade"
+HOMEBREW_NO_EMOJI=1 execute "brew upgrade"
+execute "brew upgrade --cask"
 execute "gem update --system"
 execute "gem update"
 execute "gem clean"

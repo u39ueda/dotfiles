@@ -10,7 +10,7 @@
 	<array>
 		<string>/bin/sh</string>
 		<string>-c</string>
-		<string>/Users/yueda/bin/update.sh</string>
+		<string><HOME_DIR>/bin/update.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
