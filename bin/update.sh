@@ -24,5 +24,6 @@ execute "brew upgrade --cask"
 execute "gem update --system"
 execute "gem update"
 execute "gem clean"
+execute "flutter upgrade"
 terminal-notifier -title 'Auto Upgrader' -message 'Auto upgraded!'
 
