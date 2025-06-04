@@ -7,9 +7,10 @@ source ~/.bashrc
 GREEN='\033[32m'
 RED='\033[31m'
 CLEAR='\033[m'
+NOTIFIER_GROUP_ID=localhost.auto-upgrade
 function fatalError() {
   echo -e "$RED[$(LC_ALL=C date '+%F %T')] Failure '$1'.$CLEAR"
-  terminal-notifier -title 'Auto Upgrader' -message 'Auto upgrade failed!'
+  terminal-notifier -title 'Auto Upgrader' -message 'Upgrade failed!' -group "${NOTIFIER_GROUP_ID}"
   exit 1
 }
 function execute() {
@@ -25,5 +26,5 @@ execute "gem update --system"
 execute "gem update"
 execute "gem clean"
 execute "flutter upgrade"
-terminal-notifier -title 'Auto Upgrader' -message 'Auto upgraded!'
+terminal-notifier -title 'Auto Upgrader' -message 'Upgrade success!' -group "${NOTIFIER_GROUP_ID}"
 
