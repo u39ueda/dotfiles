@@ -90,6 +90,7 @@ ln -sf ${DOTFILES_DIR}/.gitignore ~/.config/git/ignore
 ln -sf ${DOTFILES_DIR}/.gitconfig ~/.config/git/config
 ln -sf ${DOTFILES_DIR}/.vimrc ~/.vimrc
 ln -sf ${DOTFILES_DIR}/.gvimrc ~/.gvimrc
+ln -sf ${DOTFILES_DIR}/.tigrc ~/.config/tig/config
 
 # setup LaunchCtl
 notify Setup LaunchCtl.
