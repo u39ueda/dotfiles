@@ -201,6 +201,10 @@ bind refs	C	?git checkout %(branch)
 bind refs	!	?git branch -D %(branch)
 bind reflog	C	?git checkout %(branch)
 bind reflog	!	?git reset --hard %(commit)
+# Customize
+bind status	S	!git stash save
+bind main	x	?git commit --fixup=%(commit)
+bind main	f	!git fetch -v
 
 # Normal commands
 # ---------------
@@ -273,6 +277,9 @@ bind generic	<PgUp>	move-page-up
 bind generic	-	move-page-up
 bind generic	<Home>	move-first-line
 bind generic	<End>	move-last-line
+# Customize
+bind generic	g	move-first-line
+bind generic	G	move-last-line
 
 # Scrolling
 bind generic	|	scroll-first-col
@@ -286,6 +293,9 @@ bind generic	<SBack>	scroll-page-up
 bind generic	<SFwd>	scroll-page-down
 # bind generic	???	scroll-half-page-up
 # bind generic	???	scroll-half-page-down
+# Customize
+bind generic	<C-b>	scroll-page-up
+bind generic	<C-f>	scroll-page-down
 
 # Searching
 bind generic	/	search
