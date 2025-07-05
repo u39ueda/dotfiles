@@ -98,14 +98,14 @@ if [ ! -d ~/bin ]; then
   mkdir -p ~/bin
   chmod 700 ~/bin
 fi
-if [ ! -d "~/Library/LaunchAgents" ]; then
-  mkdir -p "~/Library/LaunchAgents"
-  chmod 700 "~/Library/LaunchAgents"
+if [ ! -d "${HOME}/Library/LaunchAgents" ]; then
+  mkdir -p "${HOME}/Library/LaunchAgents"
+  chmod 700 "${HOME}/Library/LaunchAgents"
 fi
 ln -sf ${DOTFILES_DIR}/bin/update.sh ~/bin/update.sh
-cp -f ${DOTFILES_DIR}/launchctl/localhost.auto-upgrade.plist ~/Library/LaunchAgents/localhost.auto-upgrade.plist
-sed -i.bk "s#<HOME_DIR>#${HOME}#" ~/Library/LaunchAgents/localhost.auto-upgrade.plist
-rm -f ~/Library/LaunchAgents/localhost.auto-upgrade.plist.bk
+cp -f ${DOTFILES_DIR}/launchctl/localhost.auto-upgrade.plist "${HOME}/Library/LaunchAgents/localhost.auto-upgrade.plist"
+sed -i.bk "s#<HOME_DIR>#${HOME}#" "${HOME}/Library/LaunchAgents/localhost.auto-upgrade.plist"
+rm -f "${HOME}/Library/LaunchAgents/localhost.auto-upgrade.plist.bk"
 if ! launchctl list localhost.auto-upgrade > /dev/null; then
   notify bootstrap localhost.auto-upgrade.
   launchctl bootstrap gui/${UID} ${HOME}/Library/LaunchAgents/localhost.auto-upgrade.plist

@@ -15,7 +15,7 @@ function fatalError() {
 }
 function execute() {
   echo -e "$GREEN[$(date '+%F %T')] Start '$1'.$CLEAR"
-  eval $1 || fatalError $1
+  eval $1 || fatalError "$1"
   echo -e "$GREEN[$(date '+%F %T')] Finish '$1'.$CLEAR"
 }
 
