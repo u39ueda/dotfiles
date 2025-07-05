@@ -203,8 +203,10 @@ bind reflog	C	?git checkout %(branch)
 bind reflog	!	?git reset --hard %(commit)
 # Customize
 bind status	S	!git stash save
+bind status	+	?git commit --amend
 bind main	x	?git commit --fixup=%(commit)
 bind main	f	!git fetch -v
+bind main	i	?git rebase -i %(commit)
 
 # Normal commands
 # ---------------
@@ -296,6 +298,8 @@ bind generic	<SFwd>	scroll-page-down
 # Customize
 bind generic	<C-b>	scroll-page-up
 bind generic	<C-f>	scroll-page-down
+bind generic	<C-k>	scroll-line-up
+bind generic	<C-j>	scroll-line-down
 
 # Searching
 bind generic	/	search
